@@ -1,4 +1,4 @@
-name: Generate Snake Pink
+name: Metrics Snake Pink
 
 on:
   schedule:
@@ -6,18 +6,18 @@ on:
   workflow_dispatch:
 
 jobs:
-  snake:
+  generate:
     runs-on: ubuntu-latest
     steps:
-      - name: Generate GitHub snake contribution grid
+      - name: Generate GitHub metrics
         uses: lowlighter/metrics@latest
         with:
-          filename: github-contribution-grid-snake.svg
+          filename: github-metrics.svg
           token: ${{ secrets.GITHUB_TOKEN }}
           base: ""
+          plugin_contributors: yes
           plugin_isocalendar: yes
-          plugin_skyline: no
-          plugin_skyline_year: 2024
-          plugin_skyline_frames: 60
-          plugin_skyline_quality: 1
-          plugin_skyline_color: pink
+          plugin_achievements: yes
+          config_timezone: Europe/Bucharest
+          config_padding: 10%
+          config_twemoji: yes
