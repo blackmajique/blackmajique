@@ -1,0 +1,12 @@
+# .github/snakes/custom-snake-config.yml
+
+name: Custom Snake
+github_user_name: blackmajique
+
+# Animația și culorile
+theme: dark
+color_snake: "#00FFFF"
+color_dots: "#444BDB,#FF6AC1,#39FF14,#FAFF00,#FF3131"
+
+# Output
+output: github-contribution-grid-snake.svg
