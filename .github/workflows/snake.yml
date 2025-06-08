@@ -1,4 +1,4 @@
-name: Generate Snake
+name: Generate Snake Pink
 
 on:
   schedule:
@@ -6,24 +6,18 @@ on:
   workflow_dispatch:
 
 jobs:
-  generate:
+  snake:
     runs-on: ubuntu-latest
     steps:
-      - name: Generate snake inline 💖
-        uses: Platane/snk@v3
+      - name: Generate GitHub snake contribution grid
+        uses: lowlighter/metrics@latest
         with:
-          github_user_name: blackmajique
-          color_snake: "#FF69B4"
-          color_dots: "#FFB6C1,#FF69B4,#FF85B3,#FFC0CB,#DB7093"
-          theme: dark
-          transparent: true
-          outputs: |
-            dist/github-contribution-grid-snake.svg
-
-      - name: Push to output branch
-        uses: crazy-max/ghaction-github-pages@v3
-        with:
-          target_branch: output
-          build_dir: dist
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          filename: github-contribution-grid-snake.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+          base: ""
+          plugin_isocalendar: yes
+          plugin_skyline: no
+          plugin_skyline_year: 2024
+          plugin_skyline_frames: 60
+          plugin_skyline_quality: 1
+          plugin_skyline_color: pink
