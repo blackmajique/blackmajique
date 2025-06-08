@@ -1,9 +1,7 @@
 github_user_name: blackmajique
 
-# Culori cool pentru snake și doturi
-color_snake: "#00ffff"
-color_dots: "#39FF14,#FF6AC1,#FAFF00,#FF3131,#F97FFF"
-
-# Dark mode + output
 theme: dark
+color_snake: "#FF69B4"
+color_dots: "#FFB6C1,#FF69B4,#FF85B3,#FFC0CB,#DB7093"  
+transparent: false
 output: github-contribution-grid-snake.svg
