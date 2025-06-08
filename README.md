@@ -6,14 +6,6 @@
 
 ---
 
-<p align="center">
-  <a href="https://github.com/blackmajique">
-    <img src="https://github-profile-trophy.vercel.app/?username=blackmajique&theme=dracula&row=1&no-bg=true&no-frame=true" />
-  </a>
-</p>
-
----
-
 ## Languages and Tools:
 <p align="center">
   <a href="#"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="Python" width="40" height="40"/></a>
